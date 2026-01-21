@@ -26,6 +26,18 @@ img {
     margin: 16px 16px 0 16px;
 }
 
+@media screen and (max-width: 375px) {
+    .content {
+        width: 320px;
+        height: 489px;
+    }
+
+    p#first-text {
+        height: 42px;
+        font-size: 15px;
+    }
+}
+
 section {
     margin: 24px 16px 40px 16px;
     padding: 0 16px 0 16px;
@@ -48,14 +60,3 @@ p#second-text {
     margin: 0;
 }
 
-@media screen and (max-width: 375px) {
-    .content {
-        width: 320px;
-        height: 489px;
-    }
-
-    p#first-text {
-        height: 42px;
-        font-size: 15px;
-    }
-}

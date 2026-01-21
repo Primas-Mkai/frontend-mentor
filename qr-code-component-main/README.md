@@ -18,7 +18,7 @@ This is a solution to the [QR code component challenge](https://www.frontendment
 
 ### Screenshot
 
-![QR Code Component Screenshot](./images/image-qr-code.png)
+![QR Code Component Screenshot](./images/Screenshot.png)
 
 ### Links
 
