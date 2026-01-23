@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4D04E;
+    font-family: "Figtree", sans-serif;
+}
+
+.card {
+    max-width: 384px;
+    background-color: white;
+    padding: 24px;
+    border:1px solid #111;
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section .heading, p, h1 {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+section .heading {
+    width: 82px;
+    height: 29px;
+    margin-top: 24px;
+    background-color: #F4D04E;
+    position: relative;
+    border-radius: 4px;
+}
+
+section .heading p {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 150%;
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    right: 12px;
+    bottom: 4px;
+}
+
+section p {
+    font-size: 14px;
+}
+
+section h1 {
+    font-size: 24px;
+}
+
+section p#text {
+    margin-bottom: 24px;
+    color: #6B6B6B;
+    font-size: 16px;
+}
+
+footer {
+    max-width: 129px;
+    height: 32px;
+    position: relative;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
+}
+
+footer span {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 150%;
+    position: absolute;
+    top: 5.5px;
+    left: 44px;
+    right: 0;
+    bottom: 5.5px;
+}
