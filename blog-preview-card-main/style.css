@@ -94,7 +94,6 @@ footer span {
 
 @media screen and (max-width: 375px) {
     .card {
-<<<<<<< HEAD
         margin: 0 24px;
         max-width: 327px;
     }
@@ -128,39 +127,37 @@ footer span {
 
     section p#text {
         font-size: 14px;
-=======
-    max-width: 327px;
+        max-width: 327px;
     }
 
     img {
-    width: 100%;
-    border-radius: 10px;
+        width: 100%;
+        border-radius: 10px;
     }
 
     section .heading, p, h1 {
-    margin-bottom: 12px;
-    margin-top: 12px;
+        margin-bottom: 12px;
+        margin-top: 12px;
     }
 
     section .heading {
-    width: 73px;
-    height: 26px;
+        width: 73px;
+        height: 26px;
     }
 
     section .heading p {
-    font-size: 12px;
+        font-size: 12px;
     }
 
     section p {
-    font-size: 12px;
+        font-size: 12px;
     }
 
     section h1 {
-    font-size: 20px;
+        font-size: 20px;
     }
 
     section p#text {
-    font-size: 14px;
->>>>>>> 51b9699abd17c86f65bb0fb0813ebb2d762cb802
+        font-size: 14px;
     }
 }
