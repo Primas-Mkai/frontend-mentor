@@ -3,19 +3,21 @@ body {
     background-color: #ECF2F8;
     padding: 64px 24px;
     font-family: "Manrope", sans-serif;
+    position: relative;
 }
 
-article.article-preview-component {
+.article-preview-component {
     width: 327px;
     max-width: 100%;
     background-color: white;
+    border-radius: 10px;
 }
 
-article.article-preview-component img {
+.article-preview-component img {
     width: 327px;
 }
 
-article.article-preview-component p.first-paragraph{
+.article-preview-component p.first-paragraph{
     font-size: 20px;
     font-weight: bold;
     line-height: 130%;
@@ -24,50 +26,121 @@ article.article-preview-component p.first-paragraph{
     color: #48556A;
 }
 
-article.article-preview-component p.second-paragraph{
+.article-preview-component p.second-paragraph{
     font-size: 13px;
     line-height: 140%;
     margin: 24px 30px 48px;
     color: #6E8098;
 }
 
-footer {
+.default-state {
     width: 267px;
-    margin: 0 30px 18px;
+    margin: 0 30px;
+    padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-footer img.avatar {
+.default-state img.avatar {
     width: 40px;
     height: 40px;
     border-radius: 40px;
 }
 
-footer .profile-info {
+.default-state .profile-info {
     position: absolute;
     left: 56px;
 }
 
-footer .profile-info p.name,p.date {
+.default-state .profile-info p.name,p.date {
     margin: 0;
 }
 
-footer .profile-info p.name {
+.default-state .profile-info p.name {
     font-size: 13px;
     font-weight: bold;
     line-height: 140%;
     color:#48556A;
 }
 
-footer .profile-info p.date {
+.default-state .profile-info p.date {
     font-size: 13px;
     line-height: 140%;
     color:#9DAEC2;
 }
 
-footer img.share-icon {
+.default-state .icon-holder {
     width: 32px;
     height: 32px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: #ECF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-state img.share-icon {
+    width: 15px;
+    height: 12px;
+}
+
+.popup-share-container {
+    background-color: #48556A;
+    border-radius: 0 0 10px 10px;
+    width: 327px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 45px;
+    display: none;
+}
+
+.popup-share-container .share-state {
+    width: 267px;
+    height: 76px;
+    margin-left: 30px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.popup-share-container .share-state p {
+    margin: 28px 24px 30px 0;
+}
+
+.popup-share-container .share-state .share-icons {
+    display: flex;
+    margin: 28px 64px 28px 0;
+}
+
+.popup-share-container .share-state .share-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+.popup-share-container .share-state .share-icons img#pinterest-icon {
+    margin-right: 0;
+}
+
+.popup-share-container .share-state .share-icon-holder {
+    width: 32px;
+    height: 32px;
+    margin: 22px 0;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: #ECF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-share-container .share-state .share-icon-holder img  {
+    width: 15px;
+    height: 12px;   
 }
