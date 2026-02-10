@@ -1,9 +1,12 @@
 body {
     margin: 0;
+    height: 100vh;
     background-color: #ECF2F8;
-    padding: 64px 24px;
     font-family: "Manrope", sans-serif;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .article-preview-component {
@@ -13,8 +16,35 @@ body {
     border-radius: 10px;
 }
 
+@media screen and (min-width: 376px) {
+    .article-preview-component {
+        width: 608px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .article-preview-component {
+        width: 730px;
+    }
+}
+
 .article-preview-component img {
     width: 327px;
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 376px) {
+    .article-preview-component img {
+    width: 229px;
+    border-radius: 10px 0 0 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .article-preview-component img {
+    width: 285px;
+    }
 }
 
 .article-preview-component p.first-paragraph{
@@ -26,11 +56,25 @@ body {
     color: #48556A;
 }
 
+@media screen and (min-width: 376px) {
+    .article-preview-component p.first-paragraph {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;;
+    }
+}
+
 .article-preview-component p.second-paragraph{
     font-size: 13px;
     line-height: 140%;
     margin: 24px 30px 48px;
     color: #6E8098;
+}
+
+@media screen and (min-width: 376px) {
+    .article-preview-component p.second-paragraph {
+        margin: 24px 0;
+    }
 }
 
 .default-state {
@@ -40,6 +84,14 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+
+@media screen and (min-width: 376px) {
+    .default-state {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
 }
 
 .default-state img.avatar {
@@ -94,27 +146,69 @@ body {
     width: 327px;
     max-width: 100%;
     position: absolute;
-    bottom: 45px;
+    bottom: 30px;
     display: none;
 }
 
+@media screen and (min-width: 376px) {
+    .popup-share-container {
+        width: 248px;
+        height: 55px;
+        bottom: 275px;
+        right: 70px;
+        border-radius: 10px;
+    }
+}
+
+
 .popup-share-container .share-state {
     width: 267px;
-    height: 76px;
+    
     margin-left: 30px;
     border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: flex-start;
 }
 
+@media screen and (min-width: 376px) {
+    .popup-share-container .share-state {
+        margin: 0 auto;
+        width: 171px;
+    }
+
+    .popup-share-container .share-state::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 12px;
+        border-style: solid;
+        border-color: #48556A transparent transparent transparent;
+    }
+}
 
 .popup-share-container .share-state p {
     margin: 28px 24px 30px 0;
+    color: #9DAEC2;
 }
+
+@media screen and (min-width: 376px) {
+    .popup-share-container .share-state p {
+        margin: 18px 24px 31px 0;
+    }
+}
+
 
 .popup-share-container .share-state .share-icons {
     display: flex;
     margin: 28px 64px 28px 0;
+}
+
+@media screen and (min-width: 376px) {
+    .popup-share-container .share-state .share-icons {
+        margin: 18px 39px 29px 0;
+    }
 }
 
 .popup-share-container .share-state .share-icons img {
@@ -140,7 +234,20 @@ body {
     align-items: center;
 }
 
+@media screen and (min-width: 376px) {
+    .popup-share-container .share-state .share-icon-holder {
+        display: none;
+    }
+}
+
 .popup-share-container .share-state .share-icon-holder img  {
     width: 15px;
     height: 12px;   
+}
+
+@media screen and (min-width: 376px) {
+    .main-content {
+        width: 365px;
+        margin: 30px 40px;
+    }
 }
