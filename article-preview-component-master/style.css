@@ -140,18 +140,21 @@ body {
     height: 12px;
 }
 
-.popup-share-container {
+.popup-share-block {
     background-color: #48556A;
     border-radius: 0 0 10px 10px;
     width: 327px;
     max-width: 100%;
     position: absolute;
     bottom: 30px;
+}
+
+.popup-share-hidden {
     display: none;
 }
 
 @media screen and (min-width: 376px) {
-    .popup-share-container {
+    .popup-share-block {
         width: 248px;
         height: 55px;
         bottom: 275px;
@@ -161,7 +164,7 @@ body {
 }
 
 
-.popup-share-container .share-state {
+.popup-share-block .share-state {
     width: 267px;
     
     margin-left: 30px;
@@ -171,12 +174,12 @@ body {
 }
 
 @media screen and (min-width: 376px) {
-    .popup-share-container .share-state {
+    .popup-share-block .share-state {
         margin: 0 auto;
         width: 171px;
     }
 
-    .popup-share-container .share-state::after {
+    .popup-share-block .share-state::after {
         content: "";
         position: absolute;
         top: 100%;
@@ -188,40 +191,40 @@ body {
     }
 }
 
-.popup-share-container .share-state p {
+.popup-share-block .share-state p {
     margin: 28px 24px 30px 0;
     color: #9DAEC2;
 }
 
 @media screen and (min-width: 376px) {
-    .popup-share-container .share-state p {
+    .popup-share-block .share-state p {
         margin: 18px 24px 31px 0;
     }
 }
 
 
-.popup-share-container .share-state .share-icons {
+.popup-share-block .share-state .share-icons {
     display: flex;
     margin: 28px 64px 28px 0;
 }
 
 @media screen and (min-width: 376px) {
-    .popup-share-container .share-state .share-icons {
+    .popup-share-block .share-state .share-icons {
         margin: 18px 39px 29px 0;
     }
 }
 
-.popup-share-container .share-state .share-icons img {
+.popup-share-block .share-state .share-icons img {
     width: 20px;
     height: 20px;
     margin-right: 16px;
 }
 
-.popup-share-container .share-state .share-icons img#pinterest-icon {
+.popup-share-block .share-state .share-icons img#pinterest-icon {
     margin-right: 0;
 }
 
-.popup-share-container .share-state .share-icon-holder {
+.popup-share-block .share-state .share-icon-holder {
     width: 32px;
     height: 32px;
     margin: 22px 0;
@@ -235,12 +238,12 @@ body {
 }
 
 @media screen and (min-width: 376px) {
-    .popup-share-container .share-state .share-icon-holder {
+    .popup-share-block .share-state .share-icon-holder {
         display: none;
     }
 }
 
-.popup-share-container .share-state .share-icon-holder img  {
+.popup-share-block .share-state .share-icon-holder img  {
     width: 15px;
     height: 12px;   
 }

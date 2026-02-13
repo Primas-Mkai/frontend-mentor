@@ -1,11 +1,15 @@
 
+const shareBtn = document.querySelector(".icon-holder");
+const popupBtn = document.querySelector(".popup-share-block");
+const popupShareBtn = document.querySelector(".share-icon-holder");
 
+popupBtn.classList.add('popup-share-hidden');
 
-document.querySelector(".icon-holder").addEventListener("click", function(){
-    document.querySelector(".popup-share-container").style.display = "block";
+shareBtn.addEventListener('click', () => {
+    popupBtn.classList.toggle('popup-share-hidden');
 });
 
-document.querySelector(".share-icon-holder").addEventListener("click", function(){
-    document.querySelector(".popup-share-container").style.display = "none";
+popupShareBtn.addEventListener('click', (e) => {
+    popupBtn.classList.toggle('popup-share-hidden');
+    console.log(e.currentTarget);
 });
-
