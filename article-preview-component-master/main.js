@@ -11,5 +11,4 @@ shareBtn.addEventListener('click', () => {
 
 popupShareBtn.addEventListener('click', (e) => {
     popupBtn.classList.toggle('popup-share-hidden');
-    console.log(e.currentTarget);
 });
