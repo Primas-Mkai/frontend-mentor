@@ -56,7 +56,7 @@ form label {
     font-size: 12px;
 }
 
-form span#error {
+form span.error {
     font-weight: bold;
     font-size: 12px;
     color: #FF6155;
@@ -79,10 +79,16 @@ form input[type=email] {
     border-radius: 8px;
 }
 
-form input[type=email].displayError {
+form input[type=email].errorMail {
     background-color: #FFE7E6;
     color: #FF6155;
     border: 1px solid #FF6155;
+}
+
+form input[type=email].errorMail:focus {
+    background-color: white;
+    color: #242742;
+    border: 1px solid #000000;
 }
 
 form button {
@@ -91,6 +97,7 @@ form button {
     background-color: #242742;
     color: white;
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
     font-size: 16px;
     border: none;
     border-radius: 8px;
