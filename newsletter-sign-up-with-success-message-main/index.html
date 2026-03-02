@@ -10,28 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="assets/images/illustration-sign-up-mobile.svg" alt="illustration sign up image">
-  </header>
-
-  <main>
-    <h1>Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-    <ul>
-      <li><img src="assets/images/icon-list.svg" alt="list icon">Product discovery and building what matters</li>
-      <li><img src="assets/images/icon-list.svg" alt="list icon">Measuring to ensure updates are a success</li>
-      <li><img src="assets/images/icon-list.svg" alt="list icon">And much more!</li>
-    </ul>
-  </main>
-
-  <form id="form" novalidate>
-    <div>
-      <label for="email">Email Address</label> <span class="error" aria-live="polite"></span>
+  <div class="container">
+    <header></header>
+    
+    <div class="sub-container">
+      <main>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    
+        <ul>
+          <li><img src="assets/images/icon-list.svg" alt="list icon">Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" alt="list icon">Measuring to ensure updates are a success</li>
+          <li><img src="assets/images/icon-list.svg" alt="list icon">And much more!</li>
+        </ul>
+      </main>
+    
+      <form action="main-page-success/index.html" id="form" novalidate>
+        <div>
+          <label for="email">Email Address</label> <span class="error" aria-live="polite"></span>
+        </div>
+        <input type="email" name="email" id="email" required placeholder="email@company.com">
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
     </div>
-    <input type="email" name="email" id="email" required placeholder="email@company.com">
-    <button type="submit">Subscribe to monthly newsletter</button>
-  </form>
+    </div>
 
   <script src="main.js"></script>
 </body>
