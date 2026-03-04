@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -16,13 +17,22 @@ header nav {
     width: 1120px;
 }
 
+@media screen and (max-width: 1024px) {
+    header {
+        height: 67px;
+    }
+
+    header nav {
+        width: 680px;
+    }
+}
+
 header nav ul {
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 0;
-    width: 1120px;
 }
 
 header nav ul li {
@@ -109,6 +119,31 @@ main .hero-section img.bg-pattern-2 {
     z-index: 5;
 }
 
+@media screen and (max-width: 1024px) {
+    main .hero-section img.bg-pattern-1 {
+        left: -210px;
+    }
+
+    main .hero-section .hero-text {
+        width: 680px;
+        margin: 56px auto 0;
+    }
+
+    main .hero-section .hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 60px;
+    }
+
+    main .hero-section .hero-text h1 span {
+        font-size: 60px;
+    }
+
+    main .hero-section img.bg-pattern-2 {
+        right: -90px;
+    }
+}
+
 main figure {
     position: absolute;
     top: 415px;
@@ -120,6 +155,17 @@ main figure {
 main figure img {
     width: 767px;
     height: 441px;
+}
+
+@media screen and (max-width: 1024px) {
+    main figure {
+        left: 10%;
+    }
+
+    main figure img {
+    width: 514px;
+    height: 296px;
+}
 }
 
 main section.bottom-section {
@@ -157,6 +203,23 @@ main section.bottom-section ul li:last-child {
     margin-right: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    main section.bottom-section ul {
+        display: block;
+    }
+
+    main section.bottom-section ul li {
+        display: flex;
+        margin: 0 auto 32px;
+        width: 680px;
+    }
+
+    main section.bottom-section ul li:last-child {
+    margin-right: auto;
+    margin-bottom: 0;
+    }
+}
+
 main section.bottom-section ul li h1 {
     margin: auto;
     width: 56px;
@@ -189,6 +252,29 @@ main section.bottom-section ul li p {
     color: #24053E;
 }
 
+@media screen and (max-width: 1024px) {
+    main section.bottom-section ul li h1 {
+        margin: 36px 56px 36px 0;
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 48px;
+        text-align: center;
+        line-height: 48px;
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        font-size:20px;
+        color: #24053E;
+    }
+
+    main section.bottom-section ul li h2 {
+        margin-top: 0;
+        text-align: start;
+    }
+}
+
 section.closing-curved-edge {
     width: 100%;
     height: 216px;
@@ -214,7 +300,7 @@ section.profile .profile-info img {
 }
 
 section.profile .profile-info article {
-    width: auto;
+    width: 730px;
     padding: 64px;
     background-color: #24053E;
     position: absolute;
@@ -227,6 +313,7 @@ section.profile .profile-info article h2 {
     font-family: "Fraunces", serif;
     font-weight: 600;
     font-size: 56px;
+    margin-bottom: 32px;
     color: white;
 }
 
@@ -238,7 +325,7 @@ section.profile .profile-info article p {
 }
 
 section.profile .profile-info article button {
-    width: 162px;
+    width: 208px;
     height: 56px;
     background-color: #44FFA1;
     border: 1px solid #979797;
@@ -257,6 +344,38 @@ section.profile img.bg-pattern-3 {
     position: absolute;
     top: 65%;
     left: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+    section.profile .profile-info {
+        width: 680px;
+        height: 558px;
+    }
+
+    section.profile .profile-info img {
+        width: 280px;
+        height: 280px;
+    }
+
+    section.profile .profile-info article {
+        width: auto;
+        padding: 48px;
+        top: 27%;
+        left: 35%;
+    }
+
+    section.profile .profile-info article h2 {
+        font-size: 48px;
+    }
+
+    section.profile .profile-info article p {
+        font-size: 16px;
+    }
+
+    section.profile img.bg-pattern-3 {
+        top: 65%;
+        left: 60%;
+    }   
 }
 
 footer {
@@ -285,4 +404,6 @@ footer .footer-content .share-icons {
     display: flex;
     justify-content: space-between;
 }
+
+
 
