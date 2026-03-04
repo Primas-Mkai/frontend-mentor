@@ -49,4 +49,42 @@ button {
     cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+    button:hover {
+        background: linear-gradient(to right, #FF6A3A, #FF527B)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36384D;
+    }
+
+    main {
+        width: 504px;
+        height: auto;
+        margin: 0;
+        padding: 64px;
+        border-radius: 36px;
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        margin-bottom: 32px;
+    }
+
+    button {
+        margin-top: 0;
+    }
+}
+
+
 

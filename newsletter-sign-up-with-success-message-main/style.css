@@ -190,3 +190,9 @@ form button {
     border-radius: 8px;
     cursor: pointer;
 }
+
+@media screen and (min-width: 1024px) {
+    form button:hover {
+        background: linear-gradient(to right, #FF6A3A, #FF527B)
+    }
+}
