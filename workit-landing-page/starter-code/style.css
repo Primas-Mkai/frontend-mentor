@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -54,6 +55,7 @@ main {
     width: 100%;
     background-color: #24053E;
     position: relative;
+    overflow-x: hidden;
 }
 
 main .hero-section {
@@ -300,7 +302,7 @@ section.profile .profile-info img {
 }
 
 section.profile .profile-info article {
-    width: 730px;
+    width: auto;
     padding: 64px;
     background-color: #24053E;
     position: absolute;
@@ -358,10 +360,10 @@ section.profile img.bg-pattern-3 {
     }
 
     section.profile .profile-info article {
-        width: auto;
+        width: 504px;
         padding: 48px;
-        top: 27%;
-        left: 35%;
+        top: 30%;
+        left: 26%;
     }
 
     section.profile .profile-info article h2 {
@@ -373,8 +375,8 @@ section.profile img.bg-pattern-3 {
     }
 
     section.profile img.bg-pattern-3 {
-        top: 65%;
-        left: 60%;
+        top: 84%;
+        left: 54%;
     }   
 }
 
@@ -403,6 +405,12 @@ footer .footer-content .share-icons {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        height: 260px;
+    }
 }
 
 
