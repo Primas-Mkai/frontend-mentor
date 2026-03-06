@@ -28,6 +28,12 @@ header nav {
     }
 }
 
+@media screen and (max-width: 768px) {
+    header nav {
+        width: 335px;
+    }
+}
+
 header nav ul {
     margin: 0;
     display: flex;
@@ -146,6 +152,30 @@ main .hero-section img.bg-pattern-2 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    main .hero-section img.bg-pattern-1 {
+        display: none;
+    }
+
+    main .hero-section .hero-text {
+        width: 336px;
+        margin: 56px auto 0;
+    }
+
+    main .hero-section .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+    }
+
+    main .hero-section .hero-text h1 span {
+        font-size: 48px;
+    }
+
+    main .hero-section img.bg-pattern-2 {
+        display: none;
+    }
+}
+
 main figure {
     position: absolute;
     top: 415px;
@@ -167,6 +197,17 @@ main figure img {
     main figure img {
     width: 514px;
     height: 296px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    main figure {
+        left: 10%;
+    }
+
+    main figure img {
+    width: 320px;
+    height: 184px;
 }
 }
 
@@ -222,6 +263,15 @@ main section.bottom-section ul li:last-child {
     }
 }
 
+@media screen and (max-width: 768px) {
+    main section.bottom-section ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 32px;
+        width: 680px;
+    }
+}
+
 main section.bottom-section ul li h1 {
     margin: auto;
     width: 56px;
@@ -269,6 +319,20 @@ main section.bottom-section ul li p {
         font-weight: 600;
         font-size:20px;
         color: #24053E;
+    }
+
+    main section.bottom-section ul li h2 {
+        margin-top: 0;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main section.bottom-section ul li h1 {
+        margin: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
     }
 
     main section.bottom-section ul li h2 {
@@ -377,6 +441,32 @@ section.profile img.bg-pattern-3 {
     section.profile img.bg-pattern-3 {
         top: 84%;
         left: 54%;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    section.profile .profile-info {
+        width: 335px;
+        height: 625px;
+    }
+
+    section.profile .profile-info img {
+        margin: 0 0 0 28px;
+    }
+
+    section.profile .profile-info article {
+        width: 335px;
+        padding: 32px;
+        top: 36%;
+        left: 2px;
+    }
+
+    section.profile .profile-info article h2 {
+        font-size: 32px;
+    }
+
+    section.profile img.bg-pattern-3 {
+        display: none;
     }   
 }
 
