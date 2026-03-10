@@ -202,6 +202,7 @@ main figure img {
 
 @media screen and (max-width: 768px) {
     main figure {
+        top: 310px;
         left: 10%;
     }
 
@@ -227,6 +228,18 @@ main section.bottom-section .list-section {
     justify-content: center;
     margin-top: 161px;
     padding: 88px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    main section.bottom-section section.curved-edge {
+    height: 216px;
+    clip-path: ellipse(80% 100% at top);
+    }
+
+    main section.bottom-section .list-section {
+    margin-top: 80px;
+    padding: 64px 0 0 0;
+    }
 }
 
 main section.bottom-section ul {
@@ -337,8 +350,15 @@ main section.bottom-section ul li p {
 
     main section.bottom-section ul li h2 {
         margin-top: 0;
-        text-align: start;
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 24px;
     }
+
+    main section.bottom-section ul li p {
+    font-size: 16px;
+    text-align: center;
+}
 }
 
 section.closing-curved-edge {
