@@ -128,7 +128,12 @@ main .hero-section img.bg-pattern-2 {
 }
 
 @media screen and (max-width: 1024px) {
+    main .hero-section {
+        height: 345px;
+    }
+
     main .hero-section img.bg-pattern-1 {
+        top: -10px;
         left: -210px;
     }
 
@@ -138,9 +143,9 @@ main .hero-section img.bg-pattern-2 {
     }
 
     main .hero-section .hero-text h1 {
-    font-size: 60px;
-    font-weight: 600;
-    margin: 0 60px;
+        font-size: 60px;
+        font-weight: 600;
+        margin: 0 80px;
     }
 
     main .hero-section .hero-text h1 span {
@@ -148,11 +153,16 @@ main .hero-section img.bg-pattern-2 {
     }
 
     main .hero-section img.bg-pattern-2 {
+        top: 195px;
         right: -90px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    main .hero-section {
+        height: 320px;
+    }
+
     main .hero-section img.bg-pattern-1 {
         display: none;
     }
@@ -191,7 +201,8 @@ main figure img {
 
 @media screen and (max-width: 1024px) {
     main figure {
-        left: 10%;
+        top: 313px;
+        left: 16%;
     }
 
     main figure img {
@@ -202,6 +213,7 @@ main figure img {
 
 @media screen and (max-width: 768px) {
     main figure {
+        top: 310px;
         left: 10%;
     }
 
@@ -247,6 +259,16 @@ main section.bottom-section ul li:last-child {
 }
 
 @media screen and (max-width: 1024px) {
+    main section.bottom-section section.curved-edge {
+        height: 116px;
+        clip-path: ellipse(65% 100% at top);
+    }
+
+    main section.bottom-section .list-section {
+        margin-top: 136px;
+        padding: 56px 0 0 0;
+    }
+
     main section.bottom-section ul {
         display: block;
     }
@@ -264,6 +286,15 @@ main section.bottom-section ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
+    main section.bottom-section section.curved-edge {
+        height: 88px;
+    }
+
+    main section.bottom-section .list-section {
+        margin-top: 80px;
+        padding: 64px 0 0 0;
+    }
+
     main section.bottom-section ul li {
         display: flex;
         flex-direction: column;
@@ -337,7 +368,11 @@ main section.bottom-section ul li p {
 
     main section.bottom-section ul li h2 {
         margin-top: 0;
-        text-align: start;
+        text-align: center;
+    }
+
+    main section.bottom-section ul li p {
+        text-align: center;
     }
 }
 
@@ -346,6 +381,19 @@ section.closing-curved-edge {
     height: 216px;
     background-color: #FCF8FF;
     clip-path: ellipse(80% 100% at top);
+}
+
+@media screen and (max-width: 1024px) {
+    section.closing-curved-edge {
+        height: 116px;
+        clip-path: ellipse(65% 100% at top);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.closing-curved-edge {
+        height: 88px;
+    }
 }
 
 section.profile {
