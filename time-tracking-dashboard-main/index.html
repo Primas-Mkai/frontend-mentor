@@ -21,9 +21,9 @@
 
         <nav>
             <ul>
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
+                <li id="daily">Daily</li>
+                <li id="weekly">Weekly</li>
+                <li id="monthly">Monthly</li>
             </ul>
         </nav>
     </header>
@@ -43,12 +43,12 @@
 
             <div class="work-schedule">
                 <div class="work-activity">
-                    <p>Work</p>
+                    <p id="title">Work</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="work-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="work-current">32hrs</p>
+                    <span id="work-previous">Last week - 36hrs</span>
                 </div>
             </div>
         </section>
@@ -74,12 +74,12 @@
 
             <div class="play-schedule">
                 <div class="play-activity">
-                    <p>Play</p>
+                    <p id="title">Play</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="play-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="current">10hrs</p>
+                    <span id="previous">Last week - 36hrs</span>
                 </div>
             </div>
         </section>
@@ -104,12 +104,12 @@
 
             <div class="study-schedule">
                 <div class="study-activity">
-                    <p>Study</p>
+                    <p id="title">Study</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="study-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="current">4hrs</p>
+                    <span id="previous">Last week - 7hrs</span>
                 </div>
             </div>
         </section>
@@ -135,12 +135,12 @@
 
             <div class="exercise-schedule">
                 <div class="exercise-activity">
-                    <p>Exercise</p>
+                    <p id="title">Exercise</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="exercise-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="current">4hrs</p>
+                    <span id="previous">Last week - 5hrs</span>
                 </div>
             </div>
         </section>
@@ -166,12 +166,12 @@
 
             <div class="social-schedule">
                 <div class="social-activity">
-                    <p>Social</p>
+                    <p id="title">Social</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="social-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="current">5hrs</p>
+                    <span id="previous">Last week - 10hrs</span>
                 </div>
             </div>
         </section>
@@ -192,15 +192,17 @@
 
             <div class="self-care-schedule">
                 <div class="self-care-activity">
-                    <p>Self care</p>
+                    <p id="title">Self care</p>
                     <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
                 </div>
                 <div class="self-care-time-detail">
-                    <p>10hrs</p>
-                    <span>Last week - 36hrs</span>
+                    <p id="current">2hrs</p>
+                    <span id="previous">Last week - 2hrs</span>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

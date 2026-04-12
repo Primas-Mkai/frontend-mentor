@@ -61,6 +61,7 @@ header nav ul {
 header nav ul li {
     font-size: 18px;
     color: #7078C9;
+    cursor: pointer;
 }
 
 header nav ul li:nth-child(2) {
