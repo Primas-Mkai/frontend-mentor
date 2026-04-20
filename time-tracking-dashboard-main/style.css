@@ -13,6 +13,14 @@ body {
     align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+    body {
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 header {
     width: 327px;
     height: 203px;
@@ -66,6 +74,60 @@ header nav ul li {
 
 header nav ul li:nth-child(2) {
     color: white;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        width: 612px;
+        margin: 173px 0 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 255px;
+        height: 520px;
+        margin: 0 32px 0 0;
+    }
+
+    header figure {
+        height: 354px;
+        padding: 32px 0 0 32px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #5747EA;
+        border-radius: 15px;
+    }
+
+    header figure img {
+        width: 78px;
+        height: 78px;
+        margin-right: 0;
+    }
+
+    header figure figcaption {
+        margin-top: 40px;
+        width: 138px;
+    }
+
+    header figure figcaption p:last-child {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    
+    header nav {
+        padding: 28px 0 0 32px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header nav ul li#weekly, li#monthly {
+        margin-top: 21px;
+    }
 }
 
 main 
@@ -177,3 +239,122 @@ section.self-care .self-care-schedule .self-care-time-detail span {
     align-self: center;
 }
 
+@media screen and (min-width: 768px) {
+    main {
+        width: 612px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    main 
+    section.work,
+    section.play,
+    section.study,
+    section.exercise,
+    section.social,
+    section.self-care {
+        width: 188px;
+        height: 213px;
+        border-radius: 15px;
+        margin-bottom: 24px;
+        padding-top: 38px;
+    }
+
+    main section.work svg,
+    section.play svg,
+    section.study svg,
+    section.exercise svg,
+    section.social svg,
+    section.self-care svg {
+        top: 0;
+        right: 16px;
+    }
+
+    main section.work .work-schedule,
+    section.play .play-schedule,
+    section.study .study-schedule,
+    section.exercise .exercise-schedule,
+    section.social .social-schedule,
+    section.self-care .self-care-schedule {
+        height: 180px;
+        padding: 25.5px 21.5px 0;
+        border-radius: 15px;
+    }
+
+    main section.work .work-schedule .work-activity,
+    section.play .play-schedule .play-activity,
+    section.study .study-schedule .study-activity,
+    section.exercise .exercise-schedule .exercise-activity,
+    section.social .social-schedule .social-activity,
+    section.self-care .self-care-schedule .self-care-activity {
+        margin-bottom: 16px;
+    }
+
+    main section.work .work-schedule .work-time-detail,
+    section.play .play-schedule .play-time-detail,
+    section.study .study-schedule .study-time-detail,
+    section.exercise .exercise-schedule .exercise-time-detail,
+    section.social .social-schedule .social-time-detail,
+    section.self-care .self-care-schedule .self-care-time-detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.work .work-schedule .work-time-detail p,
+    section.play .play-schedule .play-time-detail p,
+    section.study .study-schedule .study-time-detail p,
+    section.exercise .exercise-schedule .exercise-time-detail p,
+    section.social .social-schedule .social-time-detail p,
+    section.self-care .self-care-schedule .self-care-time-detail p {
+        font-size: 56px;
+    }
+
+    main section.work .work-schedule .work-time-detail span,
+    section.play .play-schedule .play-time-detail span,
+    section.study .study-schedule .study-time-detail span,
+    section.exercise .exercise-schedule .exercise-time-detail span,
+    section.social .social-schedule .social-time-detail span,
+    section.self-care .self-care-schedule .self-care-time-detail span {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 829px;
+        height: 520px;
+    }
+
+    main 
+    section.work,
+    section.play,
+    section.study,
+    section.exercise,
+    section.social,
+    section.self-care {
+        width: 255px;
+        height: 244px;
+        margin-bottom: 32px;
+        padding-top: 45px;
+    }
+
+    main section.work .work-schedule,
+    section.play .play-schedule,
+    section.study .study-schedule,
+    section.exercise .exercise-schedule,
+    section.social .social-schedule,
+    section.self-care .self-care-schedule {
+        height: 199px;
+        padding: 32px;
+    }
+
+    main section.work .work-schedule .work-time-detail p,
+    section.play .play-schedule .play-time-detail p,
+    section.study .study-schedule .study-time-detail p,
+    section.exercise .exercise-schedule .exercise-time-detail p,
+    section.social .social-schedule .social-time-detail p,
+    section.self-care .self-care-schedule .self-care-time-detail p {
+        margin-bottom: 8px;
+    }
+}
